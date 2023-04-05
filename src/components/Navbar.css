@@ -1,0 +1,271 @@
+.group-child10 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-tan-100);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-sm) 0 var(--br-sm) 0;
+  width: 132.24px;
+  height: 32px;
+}
+.sign-up {
+  position: absolute;
+  top: 5px;
+  left: 25.9px;
+  font-size: var(--font-size-5xs);
+  font-weight: 600;
+  font-family: var(--font-open-sans);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  width: 80.44px;
+}
+.rectangle-parent3 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 597.14px;
+  width: 132.24px;
+  height: 32px;
+}
+.about-us2,
+.contact,
+.home,
+.report {
+  position: absolute;
+  top: 7px;
+  display: inline-block;
+}
+.home {
+  left: 0;
+  width: 62.71px;
+  height: 32px;
+}
+.report {
+  left: 129.52px;
+  width: 80.44px;
+}
+.about-us2 {
+  left: 272.67px;
+  width: 106.34px;
+}
+.contact {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  left: 360px;
+  font-size: var(--font-size-5xs);
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  text-align: left;
+  width: 104.98px;
+  height: 25px;
+}
+.group-parent1 {
+  position: relative;
+  top: 9px;
+   left: 700px;
+  width: 729.38px;
+  height: 39px;
+}
+.find-your-balance-1-1 {
+  position: absolute;
+  top: 0;
+  left: -10;
+  width: 497.62px;
+  height: 73px;
+  object-fit: cover;
+}
+.navbar {
+  position: absolute;
+  top: 32px;
+  left: 10px;
+  width: 1520px;
+  height: 73px;
+  text-align: left;
+  font-size: var(--font-size-5xs);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+
+
+
+
+
+
+
+
+.login-form{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0,0 ,0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.login-form form{
+  width: 18rem;
+  background: #fff;
+  margin: 0 2rem;
+  padding: 1rem 3rem;
+  border-radius: .5rem;
+  box-shadow: 0 .1rem .3rem #333;
+  position: relative;
+  height: 32.4rem;
+}
+
+.login-form form .ggl
+{
+  position: relative;
+  align-self: center;
+  left: 80px;
+  size: 120px;
+  top: -25px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+
+}
+
+.login-form form .face
+{
+  position: relative;
+  left: 130px;
+  size: 80px;
+  top: -25px;
+  cursor: pointer;
+  height: 32px;
+  width: 30px;
+  color: rgb(10, 158, 216);
+
+}
+
+.login-form form h3{
+  font-size: 3rem;
+  color: #e3a5ac;
+  padding: .3rem 0;
+  top: -10px;
+  align-items: center;
+
+}
+
+.login-form form .box
+{
+  width: 280px;
+  top: -28px;
+  left: 1px;
+  position: relative;
+  height: 25px;
+  padding: 0.8rem 0;
+  margin: 1rem 0;
+  border-radius: 12px;
+  border: transparent;
+  background-color: transparent;
+  background: transparent;
+  border-bottom: .2rem solid #666;
+  font-size: 1.2rem;
+  color: #333;
+  text-transform: none;
+
+}
+.login-form form .box::placeholder
+{
+  text-transform: capitalize;
+}
+.login-form form .box:focus
+{
+  border-color: #43ecec;
+}
+.login-form form .btn{
+  width: 100%;
+  margin: 2rem 0;
+
+}
+.login-form form .btn:hover
+{
+  background: #444;
+}
+.login-form form .topsign button
+{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  size: 8.5rem;
+  cursor: pointer;
+  color: #999;
+  background: transparent;
+  border: transparent;
+  padding: 1rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.login-form form .topsign button:hover
+{
+  color: #444;
+}
+.login-form form p
+{
+
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: -2px;
+  text-transform: none;
+
+}
+
+:root
+{
+    --gradient: linear-gradient(89.68deg, #E9F7FF -8.49%, #FCDED9 72.23%, #FFE3D1 172.57%);;
+}
+
+
+.btn
+{
+  padding: .4rem 3rem;
+  font-size: 2rem;
+  color: #fff;
+  background: #e970b0;
+  border-radius: 5rem;
+  top: -18px;
+  border: transparent;
+  cursor: pointer;
+  box-shadow: 0 .1rem .3rem rgba(0,0 ,0, .3);
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.btn::before
+{
+  content: '';
+  position: absolute;
+  top: -1rem;
+  left: -100%;
+  background: #fff9;
+  height: 150%;
+  width: 20%;
+  transform: rotate(25deg);
+  z-index: -1;
+}
+.btn:hover
+{
+  background: var(--gradient);
+}
+
+.btn:hover::before{
+    transition: .9sec linear;
+    left: 120%;
+}
+

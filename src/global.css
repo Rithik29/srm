@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-open-sans: "Open Sans";
+  --font-nunito: Nunito;
+  --font-noto-sans: "Noto Sans";
+
+  /* font sizes */
+  --font-size-5xs: 16px;
+  --font-size-4xs: 17.79px;
+  --font-size-3xs: 18px;
+  --font-size-2xs: 18.48px;
+  --font-size-xs: 20.54px;
+  --font-size-sm: 23px;
+  --font-size-base: 24px;
+  --font-size-lg: 25px;
+  --font-size-xl: 30px;
+  --font-size-2xl: 48px;
+  --font-size-3xl: 50px;
+  --font-size-4xl: 59.03px;
+  --font-size-5xl: 63.3px;
+  --font-size-6xl: 72px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-tan-100: #caa892;
+  --color-tan-200: #b0855b;
+  --color-teal: #37806b;
+  --color-dimgray-100: #646464;
+  --color-dimgray-200: #555;
+  --color-gray-100: #292930;
+  --color-gray-200: #212121;
+  --color-gray-300: #111;
+  --color-lightgray-100: #d0d0d0;
+  --color-lightgray-200: #cfcfcf;
+  --color-silver: #c4c4c4;
+  --color-whitesmoke: #f8f8f8;
+
+  /* border radiuses */
+  --br-3xs: 7px;
+  --br-2xs: 9.51px;
+  --br-xs: 13px;
+  --br-sm: 15px;
+  --br-md: 20px;
+  --br-lg: 60px;
+  --br-xl: 100px;
+  --br-2xl: 140px;
+}

@@ -1,0 +1,69 @@
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.navbar{
+  
+  height: 70px;
+}
+.find-your-balance-1-1{
+  width: 360px;
+  height: 70px;
+  top: 5px;
+ 
+}
+.group-parent1{
+ 
+  position: absolute;
+  left: 500px;
+  width: 703px;
+  height: 73px;
+  text-align: left;
+
+}
+.about-us2,
+.backbutton,
+.home,
+.report {
+  position: absolute;
+  top: 7px;
+  
+  display: inline-block;
+  margin-top: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.home {
+  left: 230px;
+  width: 62.71px;
+  /* height: 32px; */
+  
+}
+.report {
+  left: 340px;
+  width: 80px;
+}
+.about-us2 {
+  left: 450px;
+  width: 106px;
+}
+.backbutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  left: 500px;
+ 
+  color: var(--color-black);
+  text-align: left;
+  width: 104.98px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}

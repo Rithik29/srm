@@ -1,0 +1,69 @@
+.weekly-tracker {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .weekly-tracker th, .weekly-tracker td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .weekly-tracker th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  
+  .weekly-tracker td {
+    background-color: #fff;
+  }
+  
+  .weekly-tracker td label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  .weekly-tracker td input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .weekly-tracker td input + span {
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+  .weekly-tracker td input:checked + span {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+  }
+  
+  .weekly-tracker td input:checked + span::before {
+    content: '\2714';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 0.8rem;
+  }
+  
+  .weekly-tracker td:last-of-type {
+    border-right: none;
+  }
+  
+  .weekly-tracker td:first-of-type {
+    font-weight: bold;
+    background-color: #f5f5f5;
+  }
+  

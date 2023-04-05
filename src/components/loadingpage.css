@@ -1,0 +1,32 @@
+.loading {
+    position: relative;
+    /* width: 500px;
+    height: 250px;
+    margin: 50px; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10%; */
+  }
+  
+  .loadcontainer {
+    position: absolute;
+    /* width: 50px; */
+    height: 50px;
+    left: 30%;
+    top: 150px;
+    text-align: center;
+
+    
+  }
+  .loadcontainer p{
+    padding: 40px;
+    font-size: x-large;
+    margin-left: -90px;
+  }
+  .ploading{
+    position: relative;
+    top: 50px;
+    left: -40px;
+  }

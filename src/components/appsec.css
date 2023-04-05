@@ -1,0 +1,67 @@
+.app-sec
+{
+    height: 770px;
+    position: absolute;
+    top: 2800px;
+}
+.app-sec .app-img    
+{
+    position: absolute;
+    align-items: center;
+    width: 260.38px;
+    height: 400px;
+    margin-top: 60px;
+    margin-left: 90px;
+    top: 150px;
+}
+.app-sec .app-det
+{
+    padding: 55px;
+    align-items: center;
+    position: relative;
+    margin-left: 640px;
+    margin-top: 10px;
+}
+.app-sec .app-det .app-head
+{
+    font-weight: 300;
+    text-shadow: 2px 2px #D4EBFB;
+    font-size: 30px;
+    font-style: normal;
+}
+.app-sec .app-det .app-head #top
+{
+    margin-left: 560px;
+    margin-bottom: -32px;
+}
+.app-sec .app-det .app-low-head .h4
+{
+    font-weight: 40;
+    font-size: 5px;
+    text-align: left;
+    padding: 25px;
+    margin-bottom: 90px;
+}
+.app-sec .app-det .app-info
+{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.app-sec .app-det .app-info .icon
+{
+    position: absolute;
+    margin-left: -80px;
+    margin-top: 17px;
+
+}
+.app-sec .app-det .app-info .icon-info
+{
+    padding: 17px;
+    text-decoration: none;
+
+}
+.app-sec .app-det .foot .im
+{
+    padding: 20px;
+    margin-bottom: 2px;
+}

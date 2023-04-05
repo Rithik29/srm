@@ -1,0 +1,77 @@
+.a-healthy-mind {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.a-health-body {
+  margin: 0;
+}
+.a-healthy-mind-container {
+  letter-spacing: 0.04em;
+  line-height: 65px;
+  font-weight: 500;
+  display: inline-block;
+}
+.a-healthy-mind-container,
+.a-healthy-mind-is-a-health-bod-wrapper,
+.description-2-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500.06px;
+  /* height: 131.37px; */
+}
+.description-2-inner {
+  top: 104.09px;
+}
+.group-child4,
+.mask-group-icon {
+  position: absolute;
+  width: 823.94px;
+  height: 733.68px;
+}
+.group-child4 {
+  top: 28.3px;
+  left: 869.92px;
+  border-radius: var(--br-2xl) 0 var(--br-2xl) 0;
+  border: 2px solid var(--color-tan-200);
+  box-sizing: border-box;
+  width: 470px;
+  height: 550px;
+}
+.mask-group-icon {
+  top: 0;
+  left: 700.41px;
+  /* object-fit: cover; */
+  width: 550px;
+  height: 550px;
+}
+.there-are-many-container {
+  position: absolute;
+  top: 281.95px;
+  left: 0;
+  line-height: 30px;
+  display: inline-block;
+  width: 658.18px;
+  height: 242.54px;
+}
+.description-2,
+.rectangle-container {
+  position: absolute;
+  width: 1520px;
+  height: 600.97px;
+}
+.rectangle-container {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-3xs);
+  color: var(--color-dimgray-100);
+  font-family: var(--font-open-sans);
+}
+.description-2 {
+  top: 2200.16px;
+  left: 60.94px;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-poppins);
+}

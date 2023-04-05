@@ -1,0 +1,94 @@
+/* .recommendations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .activity-recommendation,
+  .song-recommendation,
+  .movie-recommendation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 20px;
+  } */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.recommendations-container{
+    position: relative;
+
+}
+.part1anxiety{
+    position: absolute;
+    top: 200px;
+    display: flex;
+    min-width: 80%;
+}
+.iimganxiety img{
+    position: absolute;
+    left: 200px;
+}
+.textbanxiety{
+    position: absolute;
+    left: 800px;
+    width: 600px;
+    height: 500px;
+    border: 2px solid #B0855B;
+border-radius: 140px 0px;
+
+}
+#suggestionlist{
+    padding: 55px;
+    margin-top: 40px;
+}
+.part2anxiety{
+    position: absolute;
+    top: 800px;
+    left: 300px;
+    
+    
+}
+.heading1anxiety{
+    font-size: 30px;
+    font-family: sans-serif;
+    text-shadow: 0 0 5px #FFff, 0 0 5px #B0855B;
+}
+.reccos{
+    display: flex;
+    flex-direction: row;
+
+}
+.box2{
+    width: 200px;
+    height: 100px;
+    border: 2px solid #B0855B;
+    border-radius: 5%;
+    margin: 50px;
+    text-align: center;
+}
+.part3anxiety{
+    position: absolute;
+    top: 1000px;
+    left: 300px;
+}
+.box1{
+    width: 200px;
+    height: 100px;
+    border: 2px solid #B0855B;
+    border-radius: 5%;
+    margin: 50px;
+    text-align: center;
+}
+.spacer {
+    height: 80px;
+    margin: 0 0 -80px 0;
+   
+    background: transparent; 
+}

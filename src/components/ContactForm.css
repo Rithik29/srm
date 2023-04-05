@@ -1,0 +1,200 @@
+.contact-us-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xs);
+  background: linear-gradient(89.68deg, #e9f7ff, #fcded9 44.58%, #ffe3d1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 1347px;
+  height: 786px;
+}
+.our-geeks-are {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.blank-line {
+  margin: 0;
+}
+.our-geeks-are-container {
+  position: absolute;
+  top: 182px;
+  left: 87px;
+  line-height: 156.5%;
+  display: inline-block;
+  width: 513px;
+  height: 149px;
+}
+.instagram-1-icon,
+.linkedin-1-icon,
+.logo-twitter-png-5860-1-icon {
+  position: absolute;
+  top: 734px;
+  width: 30px;
+  height: 35px;
+  object-fit: cover;
+}
+.linkedin-1-icon {
+  left: 87px;
+}
+.logo-twitter-png-5860-1-icon {
+  left: 227px;
+}
+.instagram-1-icon {
+  left: 139px;
+}
+.contact-us5 {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  font-size: var(--font-size-4xl);
+  line-height: 156.5%;
+  font-weight: 600;
+  font-family: var(--font-nunito);
+  display: inline-block;
+  width: 294.32px;
+  height: 67px;
+}
+.group-child2 {
+  top: 0;
+  left: 720px;
+  border-radius: var(--br-xs);
+  width: 458px;
+  height: 661px;
+}
+.group-child2,
+.group-child3,
+.rectangle-input,
+.rectangle-textarea {
+  position: absolute;
+  background-color: var(--color-white);
+}
+.group-child3 {
+  border: 1px solid var(--color-lightgray-100);
+  left: 763px;
+  border-radius: var(--br-2xs);
+  box-sizing: border-box;
+  width: 372px;
+  height: 55.18px;
+}
+.rectangle-input {
+  top: 100.1px;
+  height: 55.18px;
+}
+.rectangle-input,
+.rectangle-textarea {
+  border: 1px solid var(--color-lightgray-100);
+  left: 763px;
+  border-radius: var(--br-2xs);
+  box-sizing: border-box;
+  width: 372px;
+}
+.group-child3 {
+  top: 213.1px;
+}
+.rectangle-textarea {
+  top: 327.27px;
+  height: 226.43px;
+}
+.your-name {
+  position: absolute;
+  top: 63px;
+  left: 763px;
+  line-height: 156.5%;
+  display: inline-block;
+  width: 117.97px;
+  height: 32.54px;
+}
+.email-address {
+  top: 176px;
+  left: 763px;
+  width: 138.91px;
+  height: 32.35px;
+}
+.email-address,
+.email-address1 {
+  position: absolute;
+  line-height: 156.5%;
+  display: inline-block;
+}
+.message {
+  left: 763px;
+}
+.message,
+.type-your-message,
+.your-name1 {
+  position: absolute;
+  line-height: 156.5%;
+  display: inline-block;
+}
+.message {
+  top: 287.31px;
+}
+.message,
+.your-name1 {
+  width: 117.97px;
+  height: 32.54px;
+}
+.email-address1,
+.type-your-message,
+.your-name1 {
+  left: 816.93px;
+  color: var(--color-lightgray-100);
+}
+.your-name1 {
+  top: 111.52px;
+}
+.email-address1 {
+  top: 224.52px;
+  width: 161.74px;
+  height: 32.35px;
+}
+.type-your-message {
+  height: 32.35px;
+  top: 338.69px;
+  width: 248.32px;
+}
+.rectangle-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-gray-100);
+  position: absolute;
+  top: 583px;
+  left: 1005px;
+  border-radius: var(--br-3xs);
+  width: 197px;
+  height: 38px;
+}
+.send-message {
+  position: absolute;
+  top: 589px;
+  left: 1035px;
+  font-size: var(--font-size-4xs);
+  line-height: 156.5%;
+  font-weight: 600;
+  color: var(--color-white);
+  display: inline-block;
+  width: 136px;
+  height: 25.99px;
+}
+.contact-us-parent,
+.contact-us4 {
+  position: absolute;
+  top: 54px;
+  left: 86px;
+  width: 1202px;
+  height: 661px;
+  font-size: var(--font-size-xs);
+  color: var(--color-black);
+}
+.contact-us4 {
+  top: 5370px;
+  left: 437px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 1347px;
+  height: 786px;
+  text-align: left;
+  font-size: var(--font-size-2xs);
+  color: var(--color-dimgray-200);
+  font-family: var(--font-noto-sans);
+}
