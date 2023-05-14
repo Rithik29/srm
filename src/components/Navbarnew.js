@@ -6,6 +6,7 @@ import { useState } from "react";
 import { RiCloseLine} from 'react-icons/ri';
 // import { auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
+import FrameComponent from "../pages/FrameComponent";
 //import PropPass from '../components/PropPass'
 
 const NavbarNew = () => {
@@ -17,22 +18,26 @@ const NavbarNew = () => {
   const[sign,setsign]=useState(false)
   const auth=getAuth()
 
+  const Back = () => {
+    navigate('/')
+  }
+
   
   return (
 
 <>
-      <div className="navbar">
-        <div className="group-parent1">
+      <div className="navbarnew">
+        <div className="group-parent1new">
           
           {/* <div className="home" onClick={ () => {navigate(-1)}}>HOME</div>
           <div className="report">REPORT</div> */}
 
           {/* <div className="about-us2">{`ABOUT US `}</div> */}
            
-          <button className="backbutton" >BACK</button>
+          <button className="backbuttonnew" onClick={Back} >Home</button>
         </div>
         <img
-          className="find-your-balance-1-1"
+          className="find-your-balance-1-1new"
           alt=""
           src="../find-your-balance1-1@2x.png"
         />

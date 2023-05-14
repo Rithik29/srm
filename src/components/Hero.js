@@ -191,7 +191,7 @@ const Hero = () => {
             <textarea
             className='box'
             value={id}
-            placeholder='Userid'
+            placeholder='Start Writing......'
             rows={10}
             cols={500}
             onChange={(e) => setid(e.target.value)}/>

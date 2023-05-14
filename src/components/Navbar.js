@@ -8,6 +8,9 @@ import { auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
+// import { Cursor } from "mongoose";
+// import 'reactjs-popup';
+// import 'reactjs-popup/dist/index.css';
 //import PropPass from '../components/PropPass'
 
 const Navbar = () => {
@@ -40,14 +43,10 @@ const Navbar = () => {
     try{
         const resp=await axios.post('/login', user)
         // localStorage.setItem('token', resp.data.token);
-        console.log(resp.data.id1)
         localStorage.setItem('id', resp.data);
         const temp = resp.data
-        console.log(resp.data.id1)
         console.log(temp)
         window.location.reload()
-        const sh=localStorage.getItem('id')
-
     }catch (error) {
         console.error(error);
     }
@@ -81,7 +80,6 @@ const Navbar = () => {
       });
     }
     else{
-      console.log(localStorage.getItem('id'))
       localStorage.clear()
       window.location.reload()
     }
@@ -91,6 +89,29 @@ const Navbar = () => {
     setmodal(false)
   }
   
+  const showRep = () => {
+    if(login)
+    {
+      navigate('/report')
+    }
+    else{
+      navigate('/register')
+    }
+    
+  }
+
+  const setdev = () => {
+    const divi = "Mi band 4"
+    const maci = "E5:31:4B:00:4B:CF"
+    localStorage.setItem('dev', divi )
+    localStorage.setItem('mac', maci)
+  }
+
+  const Reg = () =>{
+    navigate('/register')
+  }
+
+
   const nm=''
   const con='Contact-Us'
   const handleGoogle=() => {
@@ -150,7 +171,7 @@ const Navbar = () => {
               value={pass}
               onChange={(e) => setpass(e.target.value)}/>
               <p>forgot password<a href="#">click here</a></p>
-              <p>don't have an account?<a href="#">register now</a></p>
+              <p onClick={Reg}>don't have an account?<a href="#">register now</a></p>
               <input type='submit' 
               className='btn'
               />
@@ -168,17 +189,32 @@ const Navbar = () => {
 
 
 
-      <div className="navbar">
-        <div className="group-parent1">
-          <button className="rectangle-parent3">
+      <div className="navbar-old">
+        <div className="group-parent1-old">
+          <button className="rectangle-parent10">
             <div className="group-child10" />
-            <div className="sign-up" onClick={sign ? logout:toggle}>{sign ? logo : logi}</div>
+            <div className="sign-up-nav" onClick={sign ? logout:toggle}>{sign ? logo : logi}</div>
           </button>
-          <div className="home" onClick={ () => {navigate(-1)}}>HOME</div>
-          <div className="report">REPORT</div>
+          <div className="home-nav" onClick={ () => {navigate(-1)}}>HOME</div>
+          <div className="report-nav" onClick={showRep} style={{cursor : 'pointer'}}>REPORT</div>
 
-          <div className="about-us2">{`ABOUT US `}</div>
-          <button className="contact">Contact-Us</button>
+          <div  className="about-us2-old" onClick={setdev} style={{cursor : 'pointer'}} >DEVICE</div>
+          {/* {devices.length > 0 && (
+            <div className="popup">
+              <h2>Nearby Devices</h2>
+              <ul>
+                {devices.map(device => (
+                  <li key={device.id}>{device.name}</li>
+                ))}
+              </ul>
+            </div>
+          )} */}
+          
+
+        
+          
+          
+          <button className="contact-nav">Contact-Us</button>
         </div>
         <img
           className="find-your-balance-1-1"

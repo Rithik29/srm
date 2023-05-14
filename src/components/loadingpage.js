@@ -47,7 +47,7 @@ const Load = () => {
             // //console.log(typeof token);
             
             //window.location.reload()
-            alert(data)
+            //alert(data)
             console.log(data);
             console.log(typeof data)
             const a=0

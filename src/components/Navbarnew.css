@@ -3,17 +3,17 @@
   padding: 0px;
   margin: 0px;
 }
-.navbar{
+.navbarnew{
   
   height: 70px;
 }
-.find-your-balance-1-1{
+.find-your-balance-1-1new{
   width: 360px;
   height: 70px;
   top: 5px;
  
 }
-.group-parent1{
+.group-parent1new{
  
   position: absolute;
   left: 500px;
@@ -22,8 +22,8 @@
   text-align: left;
 
 }
-.about-us2,
-.backbutton,
+.about-us2new,
+.backbuttonnew,
 .home,
 .report {
   position: absolute;
@@ -51,12 +51,12 @@
   left: 450px;
   width: 106px;
 }
-.backbutton {
+.backbuttonnew {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  left: 500px;
+  left: 900px;
  
   color: var(--color-black);
   text-align: left;

@@ -3,37 +3,58 @@ import { useState } from "react";
 import { RiCloseLine} from 'react-icons/ri';
 import { useEffect } from "react";
 // import Navbar2 from '../components/Navbar2';
-// import NavbarNew from '../components/newnavbar/Navbarnew';
 
 import {Routes, Route, useNavigate} from 'react-router-dom';
-import './sadpage.css';
+import './anxietypage.css';
 import bgimg1 from '../assests/meditation.jpg'
-import NavbarNew from '../components/Navbarnew';
+import anxietybanner from '../assests/anxietybanner.jpg'
+// import Song from '../components/song';
+// import Suggestion from '../components/suggestions';
+// import Podcast from '../components/podcasts';
+// import NewNavbar from '../components/Newnavbar';
+import NavbarNew from './Navbarnew';
 
-const sadActivityRecommendations =[
-    " Practice mindfulness and focus on the present moment. By tuning in to your current surroundings and sensations, you can become more aware of your thoughts and feelings, and learn to observe them without judgment or attachment.",
-  " Connect with a friend or loved one and share your feelings. Having a supportive and empathetic listener can help alleviate feelings of loneliness and isolation, and provide a sense of validation and understanding.",
-  " Get outside and enjoy some fresh air and sunshine. Sunlight and nature have been shown to boost mood and reduce stress, and physical activity can also release endorphins and promote feelings of well-being.",
-  " Try a new hobby or activity that you've been curious about. Engaging in something new and stimulating can help break up the monotony of daily life and provide a sense of accomplishment and fulfillment.",
-  " Write down your thoughts and feelings in a journal. This can be a cathartic way to process and release emotions, and also provide a record of progress and growth over time.",
-  " Listen to uplifting music or a podcast. This can provide a mood boost and distract from negative thoughts and feelings, while also providing entertainment and education.",
-  " Volunteer your time or resources to help someone in need. Helping others has been shown to improve mood and increase self-esteem, while also providing a sense of purpose and meaning.",
-  " Take a break from social media and other distractions. These can often contribute to feelings of comparison, anxiety, and overwhelm, and taking a step back can provide much-needed space and clarity.",
-  " Practice self-care and treat yourself to something you enjoy. Whether it's a relaxing bath, a favorite food or drink, or a soothing activity like yoga or meditation, self-care can help provide a sense of comfort and rejuvenation.",
-  " Set small achievable goals for yourself and celebrate your progress. This can help provide a sense of purpose and direction, and also boost self-confidence and motivation.",
-  " Seek professional help from a therapist or counselor. This can provide a safe and confidential space to process emotions and learn coping skills, and also provide guidance and support for any underlying mental health concerns.",
-  " Engage in physical activity or exercise regularly. This can improve mood, reduce stress, and provide a sense of accomplishment and self-care.",
-  " Spend time with pets or animals. This can provide companionship, comfort, and a sense of unconditional love and support.",
-  " Eat a healthy and balanced diet. This can provide essential nutrients and energy for both physical and mental health, and also improve mood and overall well-being.",
-  " Take a relaxing bath or shower. This can provide a soothing and calming experience, and also promote relaxation and better sleep.",
-  " Try aromatherapy with essential oils. Certain scents like lavender and peppermint have been shown to promote relaxation, reduce anxiety, and improve mood.",
-  " Take a break from work or school and rest. This can help prevent burnout and fatigue, and also provide time for self-reflection and self-care.",
-  " Learn something new through online courses or books. This can provide mental stimulation and a sense of accomplishment, while also expanding knowledge and skills.",
-  " Find a support group or online community. This can provide a sense of connection and understanding with others who may be going through similar experiences, and also provide a safe and non-judgmental space to share and process emotions."
 
-]
-const sadSongRecommendations = [
-  
+const activityRecommendations = [
+    
+ "When you're feeling anxious, taking deep breaths and counting to ten can help you regulate your breathing and calm your mind. Focus on each inhale and exhale, and allow yourself to relax with each breath. Remember that it's okay to take a moment to pause and center yourself." ,
+  "If you're feeling overwhelmed by anxiety, try going for a walk or jog to release endorphins and clear your head. Exercise is a great way to reduce stress and improve your mood. You don't have to push yourself too hard - just get outside and move your body in a way that feels good.",
+  "Sometimes it can be helpful to write down your thoughts and worries in a journal to get them out of your head. This can help you gain perspective and clarity, and allow you to process your emotions in a more constructive way. Remember that your feelings are valid, and writing them down can be a powerful tool for healing.",
+  "Aromatherapy can be a powerful tool for reducing anxiety. Essential oils like lavender and chamomile are known for their calming properties, and can help you relax and unwind. Try using a diffuser, or dilute the oils with a carrier oil and apply them to your skin.",
+  "Taking a warm bath with Epsom salts can be a great way to relax your muscles and reduce stress. The warm water and salts can help soothe sore muscles and promote a sense of calm. Light some candles or use aromatherapy to create a spa-like atmosphere in your bathroom.",
+  "If you're feeling tense and anxious, practicing some gentle yoga poses can help release tension in your body. Yoga is a great way to connect with your breath and calm your mind. Even a few simple stretches can help you feel more grounded and centered.",
+  "Listening to calming music or nature sounds can be a soothing way to reduce anxiety. Try creating a playlist of your favorite songs or sounds, and listen to them whenever you need to relax. Music has the power to shift your mood and energy, so choose music that makes you feel calm and happy.",
+  "Practicing mindfulness meditation can be a powerful way to manage anxiety. By focusing on the present moment and observing your thoughts without judgment, you can learn to cultivate a sense of calm and inner peace. There are many apps and resources available to help you get started with mindfulness, so don't be afraid to explore what works best for you.",
+  "When you're feeling anxious, talking to a trusted friend or family member can help you gain perspective and feel supported. Don't be afraid to reach out and ask for help - sometimes just having someone to listen can make all the difference.",
+  "Getting a massage or acupuncture treatment can be a great way to release tension and promote relaxation. These therapies can help improve circulation, reduce muscle tension, and calm the mind. Find a practitioner you trust and allow yourself to fully relax and let go.",
+  "Practicing progressive muscle relaxation is a technique that involves tensing and relaxing different muscle groups in your body. This can help you become more aware of the physical sensations in your body, and learn to release tension and stress. Start by tensing and releasing your hands, then work your way up your arms, shoulders, and so on.",
+  "Engaging in a creative hobby such as painting, drawing, or knitting can be a powerful way to distract your mind from anxious thoughts. These activities can be meditative and calming, and can help you focus on the present moment. Don't worry about being perfect - just enjoy the process of creating something.",
+  "Using positive self-talk and affirmations can help counter negative thoughts and build self-confidence. Whenever you notice yourself thinking negatively, try to reframe the thought into something more positive and affirming. Remember that you are capable and worthy of happiness, and that you have the power to overcome anxiety.",
+  "Learning to say positive affirmations to yourself can be a powerful way to reduce anxiety and improve your self-esteem. Repeat phrases such as 'I am capable and strong', 'I am worthy of love and happiness', or 'I trust myself and my decisions'. Allow yourself to believe these positive statements and let them uplift your mood.",
+  "Practicing mindfulness meditation can be a helpful way to reduce anxiety and improve your mental well-being. Sit in a comfortable position and focus on your breath, allowing yourself to be fully present in the moment. Notice any thoughts or feelings that arise, but don't judge them or engage with them. Simply observe them and return your focus to your breath.",
+  "Using humor and laughter can be a powerful way to reduce anxiety and improve your mood. Watch a funny movie or TV show, or spend time with friends who make you laugh. Laughter can help shift your perspective and improve your outlook.",
+  "Using a weighted blanket or hug pillow can be a comforting way to reduce anxiety and promote relaxation. The pressure and weight can help reduce feelings of stress and promote a sense of calm.",
+  "Taking a break and doing something that brings you joy can be a helpful way to reduce anxiety. This might include watching a movie, playing a game, or spending time with loved ones. Remember that it's okay to prioritize your own happiness and well-being.",
+  "Seeking therapy or counseling can be a helpful way to manage anxiety. A therapist can provide tools and strategies to help you cope with anxiety, and provide a safe and supportive space to talk about your feelings.",
+  "Engaging in a regular exercise routine can be a powerful way to reduce anxiety and improve your mood. Choose an activity that you enjoy, such as running, swimming, or dancing. Aim for at least 30 minutes of moderate exercise each day.",
+  "Practicing self-compassion is an important way to reduce anxiety and improve your mental health. Remember to treat yourself with kindness and compassion, just as you would a good friend. Don't be too hard on yourself, and allow yourself to make mistakes and learn from them.",
+  "Using guided imagery is a technique that involves imagining a peaceful scene or situation to help reduce anxiety. Close your eyes and imagine yourself in a calm and peaceful place, such as a beach or a forest. Allow yourself to fully immerse in the visualization and feel the sense of calm it brings.",
+  "Practicing gratitude journaling can be a helpful way to focus on the positive aspects of your life. Each day, write down three things that you are grateful for. This can help cultivate a sense of gratitude and joy, and help reduce anxiety.",
+  "Connecting with nature can be a powerful way to reduce anxiety and promote well-being. Spend time outside in a park, beach, or forest, and allow yourself to connect with the natural world. Take deep breaths and allow yourself to be present in the moment.",
+  "Setting boundaries and saying no can be an important way to reduce stress and manage anxiety. Remember that it's okay to prioritize your own needs and well-being. Don't be afraid to communicate your boundaries clearly and respectfully.",
+  "Getting enough sleep is crucial for managing anxiety. Aim for 7-8 hours of sleep each night, and create a calming bedtime routine to help you unwind. This might include reading a book, taking a warm bath, or listening to relaxing music.",
+  "Eating a healthy, balanced diet can help support your mental health and reduce anxiety. Avoid processed foods and excess sugar, and focus on whole foods like fruits, vegetables, and lean proteins. Hydrate with plenty of water and avoid caffeine and alcohol.",
+  "Taking a break from social media and news can be a helpful way to reduce anxiety. It's important to stay informed, but sometimes too much information can be overwhelming. Allow yourself to disconnect and focus on things that bring you joy.",
+  "Practicing gratitude can be a powerful way to shift your focus from anxious thoughts to positive ones. Take a few moments each day to reflect on the things in your life that you are grateful for, no matter how small. This can help cultivate a sense of appreciation and joy in your life."
+
+];
+
+const songRecommendations = [
+    // 'someone like you',
+    // 'lost in japan',
+    // 'africa',
+    // 'ophelia',
+    // 'billie jean'
    
         {
           title: "Someone Like You",
@@ -242,7 +263,7 @@ const sadSongRecommendations = [
       
 ];
 
-const sadMovieRecommendations = [
+const movieRecommendations = [
     {
         title: "The Intouchables",
         movielink: "https://en.wikipedia.org/wiki/The_Intouchables"
@@ -408,44 +429,42 @@ const sadMovieRecommendations = [
         movielink: "https://en.wikipedia.org/wiki/Chhichhore"
       }
 ];
-const SadRecommendations = () => {
-    const sadRandomSongs = [];
-    const songName = [3];
-    const songArtist = [3];
-    const songYear = [3];
-    const songLink = [3];
-  
-    for (let i = 0; i < 3; i++) {
-      const randomIndex = Math.floor(Math.random() * sadSongRecommendations.length);
-      sadRandomSongs.push(sadSongRecommendations[randomIndex]);
-      songName[i]=sadSongRecommendations[randomIndex].title;
-      songArtist[i]=sadSongRecommendations[randomIndex].artist;
-      songYear[i]=sadSongRecommendations[randomIndex].year;
-      songLink[i]=sadSongRecommendations[randomIndex].link;
-    }
 
-    const sadRandomMovies = [];
+const Recommendations = () => {
+  const randomSongs = [];
+  const songName = [3];
+  const songArtist = [3];
+  const songYear = [3];
+  const songLink = [3];
+
+  for (let i = 0; i < 3; i++) {
+    const randomIndex = Math.floor(Math.random() * songRecommendations.length);
+    randomSongs.push(songRecommendations[randomIndex]);
+    songName[i]=songRecommendations[randomIndex].title;
+    songArtist[i]=songRecommendations[randomIndex].artist;
+    songYear[i]=songRecommendations[randomIndex].year;
+    songLink[i]=songRecommendations[randomIndex].link;
+  }
+
+  const randomMovies = [];
   const movieName = [3];
   const movieLink =[3];
   for (let i = 0; i < 3; i++) {
-    const randomIndex = Math.floor(Math.random() * sadMovieRecommendations.length);
-    sadRandomMovies.push(sadMovieRecommendations[randomIndex]);
-    movieName[i] = sadMovieRecommendations[randomIndex].title;
-    movieLink[i] = sadMovieRecommendations[randomIndex].movielink;
+    const randomIndex = Math.floor(Math.random() * movieRecommendations.length);
+    randomMovies.push(movieRecommendations[randomIndex]);
+    movieName[i] = movieRecommendations[randomIndex].title;
+    movieLink[i] = movieRecommendations[randomIndex].movielink;
   }
-  const sadRandomSuggestions = [];
+  const randomSuggestions = [];
   for (let i = 0; i < 3; i++) {
-    const randomIndex = Math.floor(Math.random() * sadActivityRecommendations.length);
-    sadRandomSuggestions.push(sadActivityRecommendations[randomIndex]);
+    const randomIndex = Math.floor(Math.random() * activityRecommendations.length);
+    randomSuggestions.push(activityRecommendations[randomIndex]);
   }
 
-
-
-return (
+  return (
    
     <div className="recommendations-container">
-      <NavbarNew/>
-        {/* <Navbar2/> */}
+        <NavbarNew/>
       {/* <div className="activity-recommendation">
         <h2>Activity Recommendation</h2>
         <p>{activityRecommendations[Math.floor(Math.random() * activityRecommendations.length)]}</p>
@@ -474,41 +493,40 @@ return (
           ))}
         </ul>
       </div> */}
-      <h1>We Feel you might be Unhappy!</h1>
-        <div className="part1sad">
-          
-            {/* <div className="iimgsad">
-                <img src={bgimg1} width="500px" ></img>
+      <h1>We Feel you might be Anxious!</h1>
+        <div className="part1anxiety">
+         
+            {/* <div className="iimganxiety">
+                <img src={anxietybanner} height="500px" ></img>
                 
             </div> */}
            
-                <div className="textbsad">
-                  <h2>Some Recommendations to brighten your Day!</h2>
+                <div className="textbanxiety">
+                  <h2>Some Tips to help you Calm Down</h2><br></br>
                     {/* <ul id="suggestionlist">
-                    <li>{sadRandomSuggestions[0]} </li><br></br><br></br>
-                    <li>{sadRandomSuggestions[1]} </li><br></br><br></br>
-                    <li>{sadRandomSuggestions[2]} </li>
+                    <li>{randomSuggestions[0]} </li><br></br><br></br>
+                    <li>{randomSuggestions[1]} </li><br></br><br></br>
+                    <li>{randomSuggestions[2]} </li>
 
                     </ul> */}
-                    <div className='suggestionbox-containersad'>
-                      <div className='sadsuggestion'>{sadActivityRecommendations[0]}</div><br></br><br></br>
-                      <div className='sadsuggestion'>{sadActivityRecommendations[1]}</div><br></br><br></br>
-                      <div className='sadsuggestion'>{sadActivityRecommendations[2]}</div>
+                    <div className='suggestionbox-container'>
+                      <div className='anxietysuggestion'>{randomSuggestions[0]}</div><br></br><br></br>
+                      <div className='anxietysuggestion'>{randomSuggestions[1]}</div><br></br><br></br>
+                      <div className='anxietysuggestion'>{randomSuggestions[2]}</div>
                     </div>
-
                     
                 </div>
 
         </div>
-        <div className= "part2sad">
+        <div className= "part2anxiety">
             
             
-                <div  className="heading1sad" >Song Recommendations</div>
+                <div className="heading1anxiety" >Song Recommendations</div>
             
-                <div className = "reccoss">
+                <div className = "reccosa">
             
                     
-                    <div className="box2s">
+                    <div className="box2a">
                         
                     {songName[0]}<br></br>
                     {songArtist[0]}<br></br>
@@ -516,7 +534,7 @@ return (
                     <a className='songlink' href= {songLink[0]} target="_blank">Listen now</a>
                     
                     </div> 
-                <div className="box2s">
+                <div className="box2a">
                     {songName[1]}<br></br>
                     {songArtist[1]}<br></br>
                     {songYear[1]}<br></br>
@@ -524,7 +542,7 @@ return (
 
                     
                 </div>
-                <div className="box2s">
+                <div className="box2a">
                     {songName[2]}<br></br>
                     {songArtist[2]}<br></br>
                     {songYear[2]}<br></br>
@@ -537,30 +555,30 @@ return (
                 </div>
             
         </div>
-        <div className= "part3sad">
-            <details>
+        <div className= "part3anxiety">
             
-                <summary className="heading1sad" >Movie Recommendations</summary>
             
-                <div className = "reccoss">
+                <div className="heading1anxiety">Movie Recommendations</div> 
+            
+                <div className = "reccosa">
 
-                    <div className="box1s">
+                    <div className="box1a">
                         {movieName[0]}<br></br>
                         <a className='movielink' href={movieLink[0]} target="_blank">About</a>
                         
                     </div>
-                    <div className="box1s">
+                    <div className="box1a">
                         {movieName[1]}<br></br>
                         <a className='movielink' href={movieLink[1]} target="_blank">About</a>
                         
                     </div>
-                    <div className="box1s">
+                    <div className="box1a">
                         {movieName[2]}<br></br>
                         <a className='movielink' href={movieLink[2]} target="_blank">About</a>
                         
                     </div>
                 </div>
-            </details>
+            
         </div>
         <div className="spacer"></div>
 
@@ -572,6 +590,4 @@ return (
   );
 };
 
-export default SadRecommendations;
-
-  
+export default Recommendations;

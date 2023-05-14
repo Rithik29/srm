@@ -6,11 +6,13 @@ import { useEffect } from "react";
 
 import {Routes, Route, useNavigate} from 'react-router-dom';
 import './anxietypage.css';
-import bgimg1 from '../assests/meditation.jpg'
-// import Song from '../components/song';
+// import bgimg1 from '../assests/meditation.jpg'
+// import anxietybanner from '../assests/anxietybanner.jpg'
+// // import Song from '../components/song';
 // import Suggestion from '../components/suggestions';
 // import Podcast from '../components/podcasts';
 // import NewNavbar from '../components/Newnavbar';
+import NavbarNew from './Navbarnew';
 
 
 const activityRecommendations = [
@@ -462,7 +464,7 @@ const Recommendations = () => {
   return (
    
     <div className="recommendations-container">
-        {/* <Navbar2/> */}
+        <NavbarNew/>
       {/* <div className="activity-recommendation">
         <h2>Activity Recommendation</h2>
         <p>{activityRecommendations[Math.floor(Math.random() * activityRecommendations.length)]}</p>
@@ -491,85 +493,92 @@ const Recommendations = () => {
           ))}
         </ul>
       </div> */}
+      <h1>We Feel you might be Anxious!</h1>
         <div className="part1anxiety">
-          {/* <NewNavbar/> */}
-            <div className="iimganxiety">
-                <img src={bgimg1} width="500px" ></img>
+         
+            {/* <div className="iimganxiety">
+                <img src={anxietybanner} height="500px" ></img>
                 
-            </div>
+            </div> */}
            
                 <div className="textbanxiety">
-                    <ul id="suggestionlist">
+                  <h2>Some Tips to help you Calm Down</h2><br></br>
+                    {/* <ul id="suggestionlist">
                     <li>{randomSuggestions[0]} </li><br></br><br></br>
                     <li>{randomSuggestions[1]} </li><br></br><br></br>
                     <li>{randomSuggestions[2]} </li>
 
-                    </ul>
+                    </ul> */}
+                    <div className='suggestionbox-container'>
+                      <div className='anxietysuggestion'>{randomSuggestions[0]}</div><br></br><br></br>
+                      <div className='anxietysuggestion'>{randomSuggestions[1]}</div><br></br><br></br>
+                      <div className='anxietysuggestion'>{randomSuggestions[2]}</div>
+                    </div>
                     
                 </div>
 
         </div>
         <div className= "part2anxiety">
-            <details>
             
-                <summary  className="heading1anxiety" >Song Recommendations</summary>
             
-                <div className = "reccos">
+                <div className="heading1anxiety" >Song Recommendations</div>
+            
+                <div className = "reccosa">
             
                     
-                    <div className="box2">
+                    <div className="box2a">
                         
                     {songName[0]}<br></br>
                     {songArtist[0]}<br></br>
                     {songYear[0]}<br></br>
-                    <a href= {songLink[0]} target="_blank">Listen now</a>
+                    <a className='songlink' href= {songLink[0]} target="_blank">Listen now</a>
                     
                     </div> 
-                <div className="box2">
+                <div className="box2a">
                     {songName[1]}<br></br>
                     {songArtist[1]}<br></br>
                     {songYear[1]}<br></br>
-                    <a href= {songLink[1]} target="_blank">Listen now</a>
+                    <a className='songlink' href= {songLink[1]} target="_blank">Listen now</a>
 
                     
                 </div>
-                <div className="box2">
+                <div className="box2a">
                     {songName[2]}<br></br>
                     {songArtist[2]}<br></br>
                     {songYear[2]}<br></br>
-                    <a href= {songLink[2]} target="_blank" >Listen now</a>
+                    <a className='songlink' href= {songLink[2]} target="_blank" >Listen now</a>
                     
                 </div>
                 
                     
                 
                 </div>
-            </details>
+            
         </div>
         <div className= "part3anxiety">
-            <details>
             
-                <summary className="heading1anxiety" >Movie Recommendations</summary>
             
-                <div className = "reccos">
+                <div className="heading1anxiety">Movie Recommendations</div> 
+            
+                <div className = "reccosa">
 
-                    <div className="box1">
+                    <div className="box1a">
                         {movieName[0]}<br></br>
-                        <a href={movieLink[0]} target="_blank">About</a>
+                        <a className='movielink' href={movieLink[0]} target="_blank">About</a>
                         
                     </div>
-                    <div className="box1">
+                    <div className="box1a">
                         {movieName[1]}<br></br>
-                        <a href={movieLink[1]} target="_blank">About</a>
+                        <a className='movielink' href={movieLink[1]} target="_blank">About</a>
                         
                     </div>
-                    <div className="box1">
+                    <div className="box1a">
                         {movieName[2]}<br></br>
-                        <a href={movieLink[2]} target="_blank">About</a>
+                        <a className='movielink' href={movieLink[2]} target="_blank">About</a>
                         
                     </div>
                 </div>
-            </details>
+            
         </div>
         <div className="spacer"></div>
 

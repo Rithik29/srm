@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.depressbg{
+    height: 500px;
+    background-image: url(../assests/depressionbg.jpg);
+    background-size: cover;
+}
+.depressheader h1{
+    padding: 300px;
+   
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    
+
+
+}
+.talktosomeone{
+    height: 800px;
+
+}
+.talktosomeone h2{
+    text-align: center;
+    padding: 50px;
+}
+.helplinescards{
+    display: flex;
+    flex-direction: row;
+}
+.helplinecard{
+    width: 33%;
+    height:500px;
+    border: 1px solid black;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 25px ;
+    margin-right: 25px;
+}
+.depressbutton{
+    
+        display: inline-block;
+        margin-top: 72px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 13px 30px 12px;
+        border-radius: 4px;
+        background-color: rgb(105, 185, 255);
+        transition-property: background-color;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        color: white;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+    
+}
+.servicesbox{
+    background-color: black;
+    height: 800px;
+}
+.servicesbox h2{
+    text-align: center;
+    font-size: larger;
+    color: white;
+    padding: 25px;
+
+    
+}
+.servicesd{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.griditem{
+   padding: 40px;
+    height: 300px;
+    border: 2px solid white;
+}
+.learnmored{
+   
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 10px 30px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        border-radius: 4px;
+        transition-property: background-color, border, color;
+        transition-duration: 300ms, 300ms, 300ms;
+        transition-timing-function: ease, ease, ease;
+        color: white;
+        line-height: 21px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+}
+.griditem h4 {
+    color: white;
+    text-align: center;
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 25px;
+
+}
+.griditem p{
+    color: white;
+    text-align: center;
+    padding: 25px;
+    word-spacing: 2px;
+}

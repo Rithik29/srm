@@ -10,7 +10,7 @@
   width: 132.24px;
   height: 32px;
 }
-.sign-up {
+.sign-up-nav {
   position: absolute;
   top: 5px;
   left: 25.9px;
@@ -22,7 +22,7 @@
   display: inline-block;
   width: 80.44px;
 }
-.rectangle-parent3 {
+.rectangle-parent10 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -33,33 +33,33 @@
   width: 132.24px;
   height: 32px;
 }
-.about-us2,
-.contact,
-.home,
-.report {
+.about-us2-old,
+.contact-nav,
+.home-nav,
+.report-nav {
   position: absolute;
   top: 7px;
   display: inline-block;
 }
-.home {
-  left: 0;
+.home-nav {
+  left: 14%;
   width: 62.71px;
   height: 32px;
 }
-.report {
-  left: 129.52px;
+.report-nav {
+  left:28%;
   width: 80.44px;
 }
-.about-us2 {
-  left: 272.67px;
+.about-us2-old {
+  left: 44%;
   width: 106.34px;
 }
-.contact {
+.contact-nav {
   cursor: pointer;
   border: 0;
-  padding: 0;
+  padding-left:10px ;
   background-color: transparent;
-  left: 360px;
+  left: 59%;
   font-size: var(--font-size-5xs);
   font-family: var(--font-poppins);
   color: var(--color-black);
@@ -67,9 +67,9 @@
   width: 104.98px;
   height: 25px;
 }
-.group-parent1 {
+.group-parent1-old {
   position: relative;
-  top: 9px;
+  top: 20px;
    left: 700px;
   width: 729.38px;
   height: 39px;
@@ -82,7 +82,7 @@
   height: 73px;
   object-fit: cover;
 }
-.navbar {
+.navbar-old {
   position: absolute;
   top: 32px;
   left: 10px;
@@ -122,7 +122,7 @@
   border-radius: .5rem;
   box-shadow: 0 .1rem .3rem #333;
   position: relative;
-  height: 32.4rem;
+  /* height: 32.4rem; */
 }
 
 .login-form form .ggl
@@ -154,7 +154,8 @@
 .login-form form h3{
   font-size: 3rem;
   color: #e3a5ac;
-  padding: .3rem 0;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
   top: -10px;
   align-items: center;
 

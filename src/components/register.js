@@ -7,6 +7,7 @@ import loc from '../assests/loc.png';
 import linkd from '../assests/link.png';
 import insta from '../assests/insta.png';
 import twit from '../assests/twit.png';
+import NavbarNew from "./Navbarnew";
 import axios from 'axios';
 
 function Register() {
@@ -50,66 +51,68 @@ function Register() {
 
     return(
         <>
-            <div className="body">
+            <div className="bodyreg">
+               
             <div className="signupbg">
-            <div className="box">
-                <div className="head">
+               <NavbarNew/>
+            <div className="boxreg">
+                <div className="headreg">
                     <h2>Sign Up</h2>
-                    {/* <p> Our geeks are in full swing relentlessly coading our sleek new app to bring it out to you asps</p> */}
+                    {/* <p> Our geeks are in full swing releregntlessly coading our sleek new app to bring it out to you asps</p> */}
                 </div>
 
-                <div className="form">
+                <div className="formreg">
                     <form onSubmit={handlesubmit}>
-                        <div className="ele">
-                            <label className="label">Name</label><br></br>
+                        <div className="elereg">
+                            <label className="labelreg">Name</label><br></br>
                             <input type='text'
-                            className="input-box"
+                            className="input-boxreg"
                             name="name"
                             value={Name}
                             placeholder='Your Name' 
                             onChange={(e) => setname(e.target.value)}/> <br></br>
 
                         </div>
-                        <div className="ele">
+                        <div className="elereg">
 
-                            <label className="label">Email Address</label><br></br>
+                            <label className="labelreg">Email Address</label><br></br>
                             <input type='email'
-                            className="input-box"
+                            className="input-boxreg"
                             value={Email}
                             placeholder="Email Address" 
                             onChange={(e) => setemail(e.target.value)}/><br></br>
                         </div>
-                        <div className="ele">
+                        <div className="elereg">
 
-                            <label className="label">Contact Number</label><br></br>
+                            <label className="labelreg">Contact Number</label><br></br>
                             <input type='email'
-                            className="input-box"
+                            className="input-boxreg"
                             value={Number}
                             placeholder="Contact number" 
                             onChange={(e) => setnum(e.target.value)}/><br></br>
                         </div>
 
-                        <div className="ele">
+                        <div className="elereg">
 
-                            <label className="label">Password</label><br></br>
+                            <label className="labelreg">Password</label><br></br>
                             <input type='email'
-                            className="input-box"
+                            className="input-boxreg"
                             value={Password}
                             placeholder="Password" 
                             onChange={(e) => setpass(e.target.value)}/><br></br>
                         </div>
 
-                        <div className="ele">
+                        <div className="elereg">
 
-                            <label className="label">Confrim Password</label><br></br>
+                            <label className="labelreg">Confrim Password</label><br></br>
                             <input type='email'
-                            className="input-box"
+                            className="input-boxreg"
                             value={cpass}
                             placeholder="Confirm password" 
                             onChange={(e) => setcpass(e.target.value)}/><br></br>
                         </div>
 
-                        {/* <div className="ele">
+                        {/* <div className="elereg">
                             <label className="label">Message</label><br></br>
                             <textarea type='textarea'
                             className="input-area"
@@ -119,7 +122,7 @@ function Register() {
                         </div> */}
 
                         <div>
-                            <button type='submit' className="btn" onClick={handlesubmit}>Send Message</button>
+                            <button type='submit' className="btnreg" onClick={handlesubmit}>Register</button>
                         </div>
 
                        
@@ -137,11 +140,11 @@ function Register() {
                     <p>NSUT Dwarka-Delhi</p>
                 </div> */}
 
-                <div className="social">
-                    <a href="#"><img id="signuplinked" src={linkd} alt='' /></a>
-                    <a href="#"><img id="signupinsta" src={insta} alt='' /></a>
-                    <a href="#"><img id="signuptwit" src={twit} alt='' /></a>
-                </div>
+                {/* <div className="socialreg">
+                    <a href="#"><img id="signuplinkedreg" src={linkd} alt='' /></a>
+                    <a href="#"><img id="signupinstareg" src={insta} alt='' /></a>
+                    <a href="#"><img id="signuptwitreg" src={twit} alt='' /></a>
+                </div> */}
 
 
             </div>

@@ -9,9 +9,9 @@ const AboutUsContainer = () => {
         <div className="rectangle-group">
           <div className="group-item" />
           <div className="rithik-kumar">RITHIK KUMAR</div>
-          <div className="vineet-singroha">VINEET SINGROHA</div>
-          <div className="aakriti-sharma">AAKRITI SHARMA</div>
-          <div className="aparna-jha">APARNA JHA</div>
+          <div className="vineet-singroha">VINIT SINGROHA</div>
+          <div className="aakriti-sharma">RITHIK KUMAR</div>
+          <div className="aparna-jha">VINIT SINGROHA</div>
           <div className="group-inner" />
           <div className="rectangle-div" />
           <div className="group-child1" />

@@ -11,8 +11,8 @@ import { useEffect } from "react";
 // import Suicide from "./components/Suicide";
 // import Contact from "./components/register";
 import Register from "./components/register";
-import Depression from './components/depression'
-import Happy from './components/happy'
+import Depression from './components/newdepression'
+import HappyPage from './components/happypage'
 import Recommendation from './components/anxietypage'
 import SadRecommendations from './components/sadpage'
 import Progress from './components/progress'
@@ -58,7 +58,7 @@ function App() {
     <Routes>
       <Route path="/" element={<FrameComponent />} />
       <Route path="/anxiety" element={<Recommendation />} />
-      <Route path="/happy" element={<Happy />} />
+      <Route path="/happy" element={<HappyPage />} />
       <Route path="/suicide" element={<Depression />} />
       <Route path="/sad" element={<SadRecommendations />} />
       <Route path="/report" element={<Progress />} />

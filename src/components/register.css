@@ -1,4 +1,4 @@
-.body{
+.bodyreg{
     /* background: #D0D0D0; */
     padding: 0;
     margin-top: 0;
@@ -11,7 +11,7 @@
 
 }
 
-.body .box
+.bodyreg .boxreg
 {
     position: relative;
     width: 730px;
@@ -27,16 +27,16 @@
     top: -10px;
 
 }
-.body .box .head h2
+.bodyreg .boxreg .headreg h2
 {
     font-style: normal;
-    font-weight: 100;
+    font-weight:bolder;
     padding: 30px;
     font-size: 50.03px;
     line-height: 92.39px;
-    margin-top: -40px;
+    /* margin-top: -40px; */
 }
-.body .box .head p
+.bodyreg .boxreg .headreg p
 {
     position: relative;
     top: 70px;
@@ -48,7 +48,7 @@
     font-weight: 400;
     left: 320px;
 }
-.body .box .form
+.bodyreg .boxreg .formreg
 {
     position: relative;
     width: 388px;
@@ -58,16 +58,16 @@
     border-radius: 13px;
     /* margin-top: -200px; */
     align-items: center;
-    top: 150px;
+    top: 10px;
 }
 
-.body .box .form form
+.bodyreg .boxreg .formreg form
 {
     padding: 8px;
     margin-top: 1px;
     align-items: start;
 }
-.body .box .form .ele 
+.bodyreg .boxreg .formreg .elereg 
 {
     padding: auto;
     margin-top: 30px;
@@ -75,7 +75,7 @@
     position: relative;
     left: -120px;
 }
-.body .box .form .ele .label
+.bodyreg .boxreg .formreg .elereg .labelreg
 {
     padding: 5px;
     font-weight: 400;
@@ -86,9 +86,9 @@
     left: 140px;
 }
 
-.body .box .form .ele .input-box
+.bodyreg .boxreg .formreg .elereg .input-boxreg
 {
-    box-sizing: border-box;
+    box-sizing: border-boxreg;
     position: absolute;
     width: 330px;
     height: 45px;
@@ -98,11 +98,11 @@
     color: #4b4b4b;
     position: relative;
     top: 25px;
-    left: 110px;
+    left: 130px;
 }
-.body .box .form .ele .input-area
+.bodyreg .boxreg .formreg .elereg .input-area
 {
-    box-sizing: border-box;
+    box-sizing: border-boxreg;
     position: absolute;
     width: 350px;
     height: 200px;
@@ -121,9 +121,9 @@
     padding: 10px;
 }
 
-.box .form .btn
+.boxreg .formreg .btnreg
 {
-    /* position: absolute; */
+    position: absolute;
     width: 80px;
     height: 25.99px;
     font-style: normal;
@@ -135,13 +135,13 @@
     height: 38px;
     background: #292930;
     border-radius: 7px;
-    top: 530px;
+    top: 550px;
     left: 130px;
     /* or 28px */
 
     color: #FFFFFF;
 }
-.box .con
+.boxreg .con
 {
     position: relative;
     height: 30px;
@@ -151,7 +151,7 @@
     margin-left: 8px;
     align-items: start;
 }
-.box .con p
+.boxreg .con p
 {
     display: inline-block;
     position: relative;
@@ -163,14 +163,14 @@
     line-height: 156.5%;
     color: #000000;
 }
-.box .social
+.boxreg .socialreg
 {
     position: relative;
     left: -2px; 
     top: 200px;
     display: inline-flex;
 }
-.box .social a
+.boxreg .socialreg a
 {
     padding: 8px;
     width: 30px;
@@ -179,15 +179,15 @@
     display: inline;
 }
 
-#signuplinked{
+#signuplinkedreg{
     position: relative;
     right: 200px;
 }
-#signupinsta{
+#signupinstareg{
     position: relative;
     left: 100px;
 }
-#signuptwit{
+#signuptwitreg{
     position: relative;
     left: 10%;
 }
