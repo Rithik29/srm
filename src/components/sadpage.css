@@ -6,6 +6,42 @@
     position: relative;
 
 }
+.sad_rec{
+    margin: 90px;
+    font-size: 26px;
+}
+.suggestionbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-text-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .image-box img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20%;
+  }
+  
+  .text-box {
+    position: relative;
+    height: 250px;
+    width: 500px;
+    flex-grow: 1;
+    margin: 0 20px;
+    /* padding-top: 400px; */
+    background-color: #f9f9f9;
+    border-radius: 35px;
+    padding-top: 100px;
+    font-size: 20px;
+  }
 .part1sad{
     position: absolute;
     top: 150px;
@@ -18,13 +54,13 @@
 }
 .textbsad{
     position: absolute;
-    background-image: url(./../assests/Background02.jpg);
-    background-size: cover;
+    background-image: url('https://img.freepik.com/premium-vector/seamless-pattern-abstract-background-with-futuristic-style-use-business-cover-banner_7505-1820.jpg');
+    background-size: auto;
 
    
     padding: 50px;
     text-align: center;
-    width: 100%;
+    width: 105%;
 
 }
 /* #suggestionlist{
@@ -33,12 +69,7 @@
 } */
 .part2sad{
     width: 100%;
-   
-    position: absolute;
-    top: 550px;
-
-    
-    
+    margin-top: 110%; 
 }
 .heading1sad{
     text-align: center;
@@ -47,16 +78,18 @@
 .reccoss{
     display: grid;
     grid-template-columns: auto auto auto;
+    margin-left: 20px;
 }
 .box2s{
     height: 200px;
-   
-    padding: 25px;
-    margin: 10px;
+    width: 250px;
+    font-size: 25px;
+    padding: 50px;
+    margin: 70px;
     border: 1px solid black;
     text-align: center;
     padding-top: 50px;
-    background-image: url(./../assests/gradientbg.jpg);
+    background-image: url("https://cdn.trendhunterstatic.com/phpthumbnails/223/223309/223309_1_600.jpeg?auto=webp");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
@@ -64,18 +97,16 @@
 }
 .songlink{
     display: inline-block;
-        margin-top: 72px;
-        margin-right: 10px;
-        margin-left: 10px;
-        padding: 13px 30px 12px;
+        height: 15px;
+        width: 45px;
+        padding-bottom: 17px;
         border-radius: 4px;
-        background-color: rgb(105, 185, 255);
+        background-color: rgb(108, 168, 110);
         transition-property: background-color;
         transition-duration: 300ms;
         transition-timing-function: ease;
         color: white;
-        font-size: 16px;
-        line-height: 21px;
+        font-size: 10px;
         font-weight: 300;
         text-align: center;
         letter-spacing: 2px;
@@ -84,22 +115,23 @@
 }
 .part3sad{
     width: 100%;
-    position: absolute;
-    top: 900px
+    margin-top: 10px;
 }
 .box1s{
     height: 200px;
-   
+    width: 350px;
     padding: 25px;
-    margin: 10px;
+    margin: 40px;
     border: 1px solid black;
     text-align: center;
     padding-top: 50px;
-    background-image: url(./../assests/gradientbg.jpg);
-    background-repeat: no-repeat;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/195/526/341/minions-movies-funny-yellow-wallpaper-preview.jpg") ;
     background-size: cover;
+    font-size: 30px;
+    color: cornflowerblue;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 2%;
+    border-color: darkgrey;
 }
 
 .movielink{
@@ -127,4 +159,9 @@
     margin: 0 0 -80px 0;
    
     background: transparent; 
+}
+
+#fost 
+{
+    z-index: 10000;
 }

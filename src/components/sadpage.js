@@ -9,6 +9,8 @@ import {Routes, Route, useNavigate} from 'react-router-dom';
 import './sadpage.css';
 import bgimg1 from '../assests/meditation.jpg'
 import NavbarNew from '../components/Navbarnew';
+// import { useNavigate } from 'react-router-dom';
+
 
 const sadActivityRecommendations =[
     " Practice mindfulness and focus on the present moment. By tuning in to your current surroundings and sensations, you can become more aware of your thoughts and feelings, and learn to observe them without judgment or attachment.",
@@ -439,6 +441,12 @@ const SadRecommendations = () => {
     sadRandomSuggestions.push(sadActivityRecommendations[randomIndex]);
   }
 
+  const navigate = useNavigate()
+  const togo = () => {
+    navigate('/capture')
+  }
+  
+
 
 
 return (
@@ -475,6 +483,9 @@ return (
         </ul>
       </div> */}
       <h1>We Feel you might be Unhappy!</h1>
+      <div className='came' onClick={togo}>
+          <button id='fost' onClick={togo}>Lets have some fun</button>
+        </div>
         <div className="part1sad">
           
             {/* <div className="iimgsad">
@@ -483,18 +494,47 @@ return (
             </div> */}
            
                 <div className="textbsad">
-                  <h2>Some Recommendations to brighten your Day!</h2>
+                  <h2 className='sad_rec'>Some Recommendations to brighten your Day!</h2>
                     {/* <ul id="suggestionlist">
                     <li>{sadRandomSuggestions[0]} </li><br></br><br></br>
                     <li>{sadRandomSuggestions[1]} </li><br></br><br></br>
                     <li>{sadRandomSuggestions[2]} </li>
 
                     </ul> */}
-                    <div className='suggestionbox-containersad'>
+                    {/* <div className='suggestionbox-containersad'>
                       <div className='sadsuggestion'>{sadActivityRecommendations[0]}</div><br></br><br></br>
                       <div className='sadsuggestion'>{sadActivityRecommendations[1]}</div><br></br><br></br>
                       <div className='sadsuggestion'>{sadActivityRecommendations[2]}</div>
-                    </div>
+                    </div> */}
+                    <div className='suggestionbox-container'>
+  <div className='image-text-box'>
+    <div className='image-box'>
+      <img src="https://thebestbrainpossible.com/wp-content/uploads/2018/11/AdobeStock_217024565resize.jpg" alt='Image 1' />
+    </div>
+    <div className='text-box'>
+    {sadActivityRecommendations[0]}
+    </div>
+  </div>
+  <br /><br />
+  <div className='image-text-box'>
+    <div className='text-box'>
+    {sadActivityRecommendations[1]}
+    </div>
+    <div className='image-box'>
+      <img src="https://www.mondaycampaigns.org/wp-content/uploads/2021/08/DeStress-Monday-Mindfulness-Package-Featured-Image-Frame-675x0-c-default.png" alt='Image 2' />
+    </div>
+  </div>
+  <br /><br />
+  <div className='image-text-box'>
+    <div className='image-box'>
+      <img src="https://i.pinimg.com/originals/a2/bd/db/a2bddba2db6c8e9af696f68cf4e69ce6.png" alt='Image 3' />
+    </div>
+    <div className='text-box'>
+    {sadActivityRecommendations[2]}
+    </div>
+  </div>
+</div>
+
 
                     
                 </div>
@@ -508,27 +548,27 @@ return (
                 <div className = "reccoss">
             
                     
-                    <div className="box2s">
+                    <div className="box2s" style={{ backgroundImage: `url()` }}>
                         
                     {songName[0]}<br></br>
                     {songArtist[0]}<br></br>
                     {songYear[0]}<br></br>
-                    <a className='songlink' href= {songLink[0]} target="_blank">Listen now</a>
+                    <a className='songlink' href= {songLink[0]} target="_blank">Listen</a>
                     
                     </div> 
-                <div className="box2s">
+                <div className="box2s" style={{ backgroundImage: `url()` }}>
                     {songName[1]}<br></br>
                     {songArtist[1]}<br></br>
                     {songYear[1]}<br></br>
-                    <a className='songlink' href= {songLink[1]} target="_blank">Listen now</a>
+                    <a className='songlink' href= {songLink[1]} target="_blank">Listen</a>
 
                     
                 </div>
-                <div className="box2s">
+                <div className="box2s" style={{ backgroundImage: `url()` }}>
                     {songName[2]}<br></br>
                     {songArtist[2]}<br></br>
                     {songYear[2]}<br></br>
-                    <a className='songlink' href= {songLink[2]} target="_blank" >Listen now</a>
+                    <a className='songlink' href= {songLink[2]} target="_blank" >Listen</a>
                     
                 </div>
                 
@@ -544,17 +584,17 @@ return (
             
                 <div className = "reccoss">
 
-                    <div className="box1s">
+                    <div className="box1s" style={{ backgroundImage: `url(https://c4.wallpaperflare.com/wallpaper/1018/146/511/minions-4k-8k-despicable-me-3-wallpaper-thumb.jpg)` }}>
                         {movieName[0]}<br></br>
                         <a className='movielink' href={movieLink[0]} target="_blank">About</a>
                         
                     </div>
-                    <div className="box1s">
+                    <div className="box1s" style={{ backgroundImage: `url(https://www.superiorwallpapers.com/funny-wallpapers/crazy-and-funny-minions-hd-wallpaper_2880x1800.jpg)` }}>
                         {movieName[1]}<br></br>
                         <a className='movielink' href={movieLink[1]} target="_blank">About</a>
                         
                     </div>
-                    <div className="box1s">
+                    <div className="box1s" style={{ backgroundImage: `url(https://c4.wallpaperflare.com/wallpaper/195/526/341/minions-movies-funny-yellow-wallpaper-preview.jpg)`}}>
                         {movieName[2]}<br></br>
                         <a className='movielink' href={movieLink[2]} target="_blank">About</a>
                         

@@ -28,6 +28,57 @@
 .recommendations-container h1{
     /* margin-top: 150px; */
 }
+h1{
+    margin-left: 35%;
+}
+.suggestionbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-text-box1 {
+    display: flex;
+    margin-right: 300px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .image-text-box2 {
+    display: flex;
+    margin-left: 500px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .image-text-box3 {
+    margin-right: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .image-box img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20%;
+  }
+  
+  .text-box {
+    position: relative;
+    height: 300px;
+    width: 450px;
+    flex-grow: 1;
+    margin: 0 20px;
+    padding: 10px;
+    padding-top: 40px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
 .part1anxiety{
     position: absolute;
     top: 150px;
@@ -46,21 +97,19 @@
 
 .textbanxiety{
     position: absolute;
-    background-image: url(./../assests/Background02.jpg);
-    background-size: cover;
-
-   
-    padding: 50px;
+    /* background-image: url(./../assests/Background02.jpg); */
+    background-size: contain;
+     padding: 50px;
     text-align: center;
     width: 100%;
 
-}
+}   
 
 .part2anxiety{
     width: 100%;
    
     position: absolute;
-    top: 550px;
+    top: 1660px;
 }
 .heading1anxiety{
     text-align: center;
@@ -70,20 +119,26 @@
 .reccosa{
     display: grid;
     grid-template-columns: auto auto auto;
+    margin-left: 50px;
+    
+
 }
 .box2a{
     height: 200px;
-   
-    padding: 25px;
+    width: 350px;
+    padding: 10 px;
+    padding-left: 30px;
     margin: 10px;
     border: 1px solid black;
     text-align: center;
-    padding-top: 50px;
-    background-image: url(./../assests/gradientbg.jpg);
+    font-size: 20px;
+    padding-top: 80px;
+    /* background-image: url(./../assests/gradientbg.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
    border-radius: 2%;
+   font-weight: 600;
     
     
 
@@ -96,7 +151,7 @@
         margin-left: 10px;
         padding: 13px 30px 12px;
         border-radius: 4px;
-        background-color: rgb(105, 185, 255);
+        background-color: rgb(24, 186, 110);
         transition-property: background-color;
         transition-duration: 300ms;
         transition-timing-function: ease;
@@ -113,27 +168,57 @@
 .part3anxiety{
     width: 100%;
     position: absolute;
-    top: 900px
+    top: 2000px
 }
 
-.box1a{
-    height: 200px;
-   
+.heading1anxiety{
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.heading2anxiety{
+    font-size: 32px;
+    margin-top: 70px;
+    margin-left: 570px;
+    margin-bottom: 10px;
+    font-weight: 800px;
+}
+
+
+.box1a_a {
+    height: 300px;
+    width: 350px; 
     padding: 25px;
     margin: 10px;
     border: 1px solid black;
     text-align: center;
-    padding-top: 50px;
-    background-image: url(./../assests/gradientbg.jpg);
+    /* background-image: url(./../assets/gradientbg.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 2%;
+    font-size: 20px;
+    margin-bottom: 200px;
+  }
+  
+  .movie-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 15px;
+    /* border-radius: 50%; */
+  }
 
-}
-.movielink{
+  .box1a_a p{
+    padding-bottom: 15px;
+    font-weight: 900;
+  }
+  
+.movielink_a{
     display: inline-block;
-        margin-top: 72px;
+        margin-top: 40px;
         margin-right: 10px;
         margin-left: 10px;
         padding: 13px 30px 12px;
@@ -152,5 +237,36 @@
         text-transform: uppercase;
 }
 
+
+.came button
+{
+  position: relative;
+  height: 50px;
+  width: 250px;
+  align-items: center;
+  left: 630px;
+  padding: 9px;
+  font-size: x-large;
+  background-color: peachpuff;
+  border-radius: 6px;
+  top: 30px;
+  bottom: 30px;
+  border: transparent;
+  color: brown;
+
+}
+
+.cammodule 
+{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0,0 ,0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 

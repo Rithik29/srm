@@ -8,6 +8,7 @@ import WhyUsContainer from "../components/WhyUsContainer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import "./FrameComponent.css";
+import CameraCapturePage from "../components/camera";
 
 const FrameComponent = () => {
   return (

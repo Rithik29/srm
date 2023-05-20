@@ -1,9 +1,29 @@
 import "./newdepression.css"
+import React, { useState } from 'react';
 import depressionbg from '../assests/depressionbg.jpg'
 // import { MdLocalHospital } from "react-icons/Md";
 // import {FaHandHoldingMedical} from "react-icons/Fa";
 import NavbarNew from "./Navbarnew";
 const DepressNew = () => {
+    const [messages, setMessages] = useState([]);
+    const [inputText, setInputText] = useState('');
+  
+    const handleInputChange = (e) => {
+      setInputText(e.target.value);
+    };
+  
+    const handleSendMessage = () => {
+      if (inputText.trim() !== '') {
+        const newMessage = {
+          id: Date.now(),
+          text: inputText,
+        };
+  
+        setMessages([...messages, newMessage]);
+        setInputText('');
+      }
+    };
+
     return(
         <div className="newdepress-container">
             <NavbarNew/>
@@ -16,7 +36,7 @@ const DepressNew = () => {
             </div>
             
             <div className="talktosomeone">
-                <h2>TALK TO SOMEONE NOW !</h2>
+                <h2>PLEASE GET HELP NOW !</h2>
                 <div className="helplinescards">
                     <div className="helplinecard">
                         {/* <FaHandHoldingMedical/> */}
@@ -43,7 +63,7 @@ const DepressNew = () => {
                 </div>
             </div>
             <div className="servicesbox">
-                <h2> SERVICES</h2>
+                <h2>UNTILL THEN TRY THESE !</h2><br></br><br></br>
                 <div className="servicesd">
                     <div className="griditem">
                         <h4>Getting Help</h4>
@@ -69,6 +89,29 @@ const DepressNew = () => {
                     </div>
                 </div>
             </div>
+            <div className="chatroom">
+            <p className="chat_h" >Chat with Someone Now !</p><br></br></div>
+            <div className="chat-room">
+      <div className="messages-container">
+        {messages.map((message) => (
+          <div key={message.id} className="message">
+            {message.text}
+          </div>
+        ))}
+      </div>
+      <div className="input-container">
+        <input
+          type="text"
+          value={inputText}
+          onChange={handleInputChange}
+          className="input-field"
+          placeholder="Type your message..."
+        />
+        <button className="send-button" onClick={handleSendMessage}>
+          Send
+        </button>
+      </div>
+    </div>
         </div>
     )
 

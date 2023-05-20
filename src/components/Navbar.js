@@ -16,6 +16,8 @@ import axios from "axios";
 const Navbar = () => {
   const navigate=useNavigate()
 
+  localStorage.setItem(id)
+
   const[modal,setmodal]=useState(false)
   const[id,setid]=useState()
   const[pass,setpass]=useState()
@@ -24,7 +26,7 @@ const Navbar = () => {
   const[check, setcheck]=useState(false)
   const[goog, setgoog]=useState(false)
   const auth=getAuth()
-  const login =localStorage.getItem('id')
+  const login =localStorage.setItem('id', 'abc@gamil.com')
 
   useEffect(() => {
     if(login)

@@ -16,6 +16,7 @@ import HappyPage from './components/happypage'
 import Recommendation from './components/anxietypage'
 import SadRecommendations from './components/sadpage'
 import Progress from './components/progress'
+import CameraCapturePage from "./components/camera";
 import Load from "./components/loadingpage";
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
       <Route path="/report" element={<Progress />} />
       <Route path="/register" element={<Register />} />
       <Route path="/load" element={<Load />} />
+      <Route path="/capture" element={<CameraCapturePage />} />
 
     </Routes>
   );

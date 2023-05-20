@@ -6,9 +6,25 @@
   align-items: center;
   flex-direction: column;
 }
+.happy_head{
+  margin-left: 2%;
+  font-size: larger ;
+  font-weight: 800;
+
+}
+
+.happy_but{
+  height: 40px;
+  padding: 10px;
+}
+.act_head{
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
 .landing-page-top-container {
   width: 100%;
-  height: 794px;
+  height: 750px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -31,7 +47,9 @@
 .landing-page-text {
   width: 649px;
   height: 91px;
+  margin-top: 2px;
   font-size: 3rem;
+  margin-left: 2%;
   font-family: Poppins;
   font-weight: 700;
   line-height: 1.55;
@@ -61,6 +79,7 @@
 .landing-page-cards-container {
   width: 100%;
   display: flex;
+  margin-bottom: 40px;
   grid-gap: var(--dl-space-space-doubleunit);
   flex-wrap: wrap;
   max-width: 1000px;
@@ -73,12 +92,14 @@
 .landing-page-container01 {
   width: 300px;
   display: flex;
+  margin-bottom: 90px;
   align-items: center;
   flex-direction: column;
 }
 .landing-page-image {
   width: 100%;
   height: 250px;
+  border-radius: 40px;
   object-fit: cover;
   border-top-left-radius: var(--dl-radius-radius-radius8);
   border-top-right-radius: var(--dl-radius-radius-radius8);
@@ -93,12 +114,14 @@
 .landing-page-text15 {
   font-size: 20px;
   font-style: normal;
+  margin: 25px;
   font-weight: 700;
   padding-bottom: var(--dl-space-space-halfunit);
 }
 .landing-page-text16 {
   font-size: 12px;
   max-width: 250px;
+  margin: 25px;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
 .landing-page-container03 {
@@ -111,8 +134,7 @@
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-top-left-radius: var(--dl-radius-radius-radius8);
-  border-top-right-radius: var(--dl-radius-radius-radius8);
+  border-radius: 20px;
 }
 .landing-page-container04 {
   width: 100%;
@@ -124,16 +146,19 @@
 .landing-page-text17 {
   font-size: 20px;
   font-style: normal;
+  margin: 25px;
   font-weight: 700;
   padding-bottom: var(--dl-space-space-halfunit);
 }
 .landing-page-text18 {
   font-size: 12px;
+  margin: 25px;
   max-width: 250px;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
 .landing-page-text20 {
   font-size: 12px;
+  margin: 25px;
 }
 .landing-page-container05 {
   width: 300px;
@@ -144,9 +169,12 @@
 .landing-page-image2 {
   width: 100%;
   height: 250px;
+  border-radius: 20px;
   object-fit: cover;
   border-top-left-radius: var(--dl-radius-radius-radius8);
   border-top-right-radius: var(--dl-radius-radius-radius8);
+  border-radius: 20px;
+
 }
 .landing-page-container06 {
   width: 100%;
@@ -158,11 +186,13 @@
 .landing-page-text21 {
   font-size: 20px;
   font-style: normal;
+  margin: 25px;
   font-weight: 700;
   padding-bottom: var(--dl-space-space-halfunit);
 }
 .landing-page-text22 {
   font-size: 12px;
+  margin: 25px;
   max-width: 250px;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
@@ -178,6 +208,8 @@
   object-fit: cover;
   border-top-left-radius: var(--dl-radius-radius-radius8);
   border-top-right-radius: var(--dl-radius-radius-radius8);
+  border-radius: 20px;
+
 }
 .landing-page-container08 {
   width: 100%;
@@ -190,6 +222,7 @@
 .landing-page-text23 {
   font-size: 20px;
   font-style: normal;
+  margin: 25px;
   font-weight: 700;
   padding-bottom: var(--dl-space-space-halfunit);
 }
@@ -210,6 +243,8 @@
   object-fit: cover;
   border-top-left-radius: var(--dl-radius-radius-radius8);
   border-top-right-radius: var(--dl-radius-radius-radius8);
+  border-radius: 20px;
+
 }
 .landing-page-container10 {
   width: 100%;
@@ -222,10 +257,12 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
+  margin: 25px;
   padding-bottom: var(--dl-space-space-halfunit);
 }
 .landing-page-text31 {
   font-size: 12px;
+  margin: 25px;
   max-width: 250px;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
@@ -241,6 +278,8 @@
   object-fit: cover;
   border-top-left-radius: var(--dl-radius-radius-radius8);
   border-top-right-radius: var(--dl-radius-radius-radius8);
+  border-radius: 20px;
+
 }
 .landing-page-container12 {
   width: 100%;
@@ -252,12 +291,14 @@
 .landing-page-text32 {
   font-size: 20px;
   font-style: normal;
+  margin: 25px;
   font-weight: 700;
   padding-bottom: var(--dl-space-space-halfunit);
 }
 .landing-page-text33 {
   font-size: 12px;
   max-width: 250px;
+  margin: 25px;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
 .landing-page-footer {

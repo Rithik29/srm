@@ -75,7 +75,7 @@ const Progress=()=>{
     setinfo("")
     const id=localStorage.getItem('id')
     const data = { id, date}
-    const resp = await axios.post('/summary', data)
+    const resp = await axios.post('/summary', {id : id})
     console.log(resp.data)
     setinfo(resp.data)
 

@@ -13,8 +13,7 @@ import './anxietypage.css';
 // import Podcast from '../components/podcasts';
 // import NewNavbar from '../components/Newnavbar';
 import NavbarNew from './Navbarnew';
-
-
+import CameraCapturePage from './camera';
 const activityRecommendations = [
     
  "When you're feeling anxious, taking deep breaths and counting to ten can help you regulate your breathing and calm your mind. Focus on each inhale and exhale, and allow yourself to relax with each breath. Remember that it's okay to take a moment to pause and center yourself." ,
@@ -266,15 +265,18 @@ const songRecommendations = [
 const movieRecommendations = [
     {
         title: "The Intouchables",
-        movielink: "https://en.wikipedia.org/wiki/The_Intouchables"
+        movielink: "https://en.wikipedia.org/wiki/The_Intouchables",
+        image:"https://upload.wikimedia.org/wikipedia/en/9/93/The_Intouchables.jpg"
       },
       {
         title: "The Grand Budapest Hotel",
-        movielink: "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel"
+        movielink: "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel",
+        image:"https://upload.wikimedia.org/wikipedia/en/9/93/The_Grand_Budapest_Hotel.jpg"
       },
       {
         title: "Silver Linings Playbook",
-        movielink: "https://en.wikipedia.org/wiki/Silver_Linings_Playbook"
+        movielink: "https://en.wikipedia.org/wiki/Silver_Linings_Playbook",
+        image:"https://upload.wikimedia.org/wikipedia/en/9/93/Silver_Linings_Playbook.jpg"
       },
       {
         title: "La La Land",
@@ -461,6 +463,33 @@ const Recommendations = () => {
     randomSuggestions.push(activityRecommendations[randomIndex]);
   }
 
+
+  const[cam , setcam] = useState(false)
+  const[happy, sethappy] = useState(false)
+
+  const getRandomBackgroundImage = () => {
+    const images = [
+      "image1.jpg",
+      "image2.jpg",
+      "image3.jpg",
+      "image4.jpg",
+      "image5.jpg",
+      "image6.jpg"
+    ];
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const imageUrl = `./../assests/${images[randomIndex]}`;
+    return imageUrl;
+  };
+
+  const navigate = useNavigate()
+
+
+  const togo = () => {
+
+    navigate('/capture')
+
+  }
+
   return (
    
     <div className="recommendations-container">
@@ -493,7 +522,13 @@ const Recommendations = () => {
           ))}
         </ul>
       </div> */}
+
+      {/* <div className='module'>{cam ? <div className='cammodule'>{<CameraCapturePage/> }</div> : "" }</div> */}
+
       <h1>We Feel you might be Anxious!</h1>
+        <div className='came' onClick={togo}>
+          <button onClick={togo}>Lets have some fun</button>
+        </div>
         <div className="part1anxiety">
          
             {/* <div className="iimganxiety">
@@ -509,11 +544,40 @@ const Recommendations = () => {
                     <li>{randomSuggestions[2]} </li>
 
                     </ul> */}
-                    <div className='suggestionbox-container'>
+                    {/* <div className='suggestionbox-container'>
                       <div className='anxietysuggestion'>{randomSuggestions[0]}</div><br></br><br></br>
                       <div className='anxietysuggestion'>{randomSuggestions[1]}</div><br></br><br></br>
                       <div className='anxietysuggestion'>{randomSuggestions[2]}</div>
-                    </div>
+                    </div> */}
+                    <div className='suggestionbox-container'>
+  <div className='image-text-box1'>
+    <div className='image-box'>
+      <img src="https://img.freepik.com/free-vector/hand-drawn-mindfulness-concept-with-characters_52683-69073.jpg?w=2000" alt='Image 1' />
+    </div>
+    <div className='text-box'>
+      {randomSuggestions[0]}
+    </div>
+  </div>
+  <br /><br />
+  <div className='image-text-box2'>
+    <div className='text-box'>
+      {randomSuggestions[1]}
+    </div>
+    <div className='image-box'>
+      <img src="https://media.istockphoto.com/id/1358081661/vector/mental-health-mind-or-psychology-therapy-vector-illustration-with-human-hand-watering.jpg?s=612x612&w=0&k=20&c=eFMP-lXSdiklp9vN3QT1v6WfyDsFg_3SFo7-CKG1HGI=" alt='Image 2' />
+    </div>
+  </div>
+  <br /><br />
+  <div className='image-text-box3'>
+    <div className='image-box'>
+      <img src="https://www.sheknows.com/wp-content/uploads/2020/08/quick-mindfulness-tricks.png?w=1024" alt='Image 3' />
+    </div>
+    <div className='text-box'>
+      {randomSuggestions[2]}
+    </div>
+  </div>
+</div>
+
                     
                 </div>
 
@@ -524,29 +588,29 @@ const Recommendations = () => {
                 <div className="heading1anxiety" >Song Recommendations</div>
             
                 <div className = "reccosa">
-            
-                    
-                    <div className="box2a">
+
+                    <div className="box2a" style={{ backgroundImage: `url(https://t3.ftcdn.net/jpg/01/32/97/06/360_F_132970654_d4SGKAKsiKbzHqzY1vEWbAQrBM8VEnri.jpg)` }}>
                         
                     {songName[0]}<br></br>
                     {songArtist[0]}<br></br>
                     {songYear[0]}<br></br>
-                    <a className='songlink' href= {songLink[0]} target="_blank">Listen now</a>
+                    <a className='songlink' href= {songLink[0]} target="_blank">Listen</a>
                     
                     </div> 
-                <div className="box2a">
+                <div className="box2a" style={{ backgroundImage: `url(https://c8.alamy.com/comp/PDEM2J/music-singing-guitar-with-microphone-on-a-background-of-multicolored-paints-and-notes-PDEM2J.jpg)` }}>
                     {songName[1]}<br></br>
                     {songArtist[1]}<br></br>
                     {songYear[1]}<br></br>
-                    <a className='songlink' href= {songLink[1]} target="_blank">Listen now</a>
+                    <a className='songlink' href= {songLink[1]} target="_blank">Listen</a>
 
                     
                 </div>
-                <div className="box2a">
+                <div className="box2a" style={{ backgroundImage: `url(https://www.shutterstock.com/image-vector/modern-music-logo-j-alphabet-260nw-462855829.jpg)` }}>
+
                     {songName[2]}<br></br>
                     {songArtist[2]}<br></br>
                     {songYear[2]}<br></br>
-                    <a className='songlink' href= {songLink[2]} target="_blank" >Listen now</a>
+                    <a className='songlink' href= {songLink[2]} target="_blank" >Listen</a>
                     
                 </div>
                 
@@ -558,24 +622,26 @@ const Recommendations = () => {
         <div className= "part3anxiety">
             
             
-                <div className="heading1anxiety">Movie Recommendations</div> 
+                <div className="heading2anxiety">Movie Recommendations</div> 
             
                 <div className = "reccosa">
 
-                    <div className="box1a">
-                        {movieName[0]}<br></br>
-                        <a className='movielink' href={movieLink[0]} target="_blank">About</a>
-                        
+                <div className="box1a_a">
+                      <img className="movie-image" src="https://cdn.dribbble.com/users/72535/screenshots/1339494/dribbble_minimalist_poster.png" alt="Movie Poster" />
+                      <p>{movieName[0]}</p><br />
+                      <a className="movielink_a" href={movieLink[0]} target="_blank">About</a>
                     </div>
-                    <div className="box1a">
-                        {movieName[1]}<br></br>
-                        <a className='movielink' href={movieLink[1]} target="_blank">About</a>
-                        
+                   
+
+                    <div className="box1a_a">
+                      <img className="movie-image" src="https://m.media-amazon.com/images/I/81FbH6E6f6L._AC_UL400_.jpg" alt="Movie Poster" />
+                      <p>{movieName[1]}</p><br />
+                      <a className="movielink_a" href={movieLink[1]} target="_blank">About</a>
                     </div>
-                    <div className="box1a">
-                        {movieName[2]}<br></br>
-                        <a className='movielink' href={movieLink[2]} target="_blank">About</a>
-                        
+                    <div className="box1a_a">
+                      <img className="movie-image" src="https://thekingshirt.com/wp-content/uploads/2022/06/minimalist-movie-posters-movie-home-decor-movie-gift-movie-prints-film-poster-movie-poster-lost-boys-star-wars-rocky-pulp-fiction.jpg" alt="Movie Poster" />
+                      <p>{movieName[2]}</p><br />
+                      <a className="movielink_a" href={movieLink[2]} target="_blank">About</a>
                     </div>
                 </div>
             
